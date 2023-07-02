@@ -18,6 +18,12 @@ const MyEvents = () => {
 
   const { user } = useSelector((state) => state.auth);
 
+  const onEdit = (e) => {
+    localStorage.setItem("edit", e.target.getAttribute("event"));
+
+    navigate("/edit");
+  };
+
   const onDelete = (e) => {
     e.preventDefault();
 
@@ -52,7 +58,14 @@ const MyEvents = () => {
       <div className="flex flex-wrap items-center justify-center gap-4 mt-4">
         {events.map((event) => {
           if (event.user.toString() === user._id) {
-            return <Card event={event} myEvent={true} onDelete={onDelete} />;
+            return (
+              <Card
+                event={event}
+                myEvent={true}
+                onDelete={onDelete}
+                onEdit={onEdit}
+              />
+            );
           }
         })}
       </div>

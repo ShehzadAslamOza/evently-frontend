@@ -5,7 +5,7 @@ import { BiTimeFive, BiSolidCity } from "react-icons/bi";
 import { BsCalendarDate } from "react-icons/bs";
 import { button } from "@material-tailwind/react";
 
-const Card = ({ event, myEvent, onDelete }) => {
+const Card = ({ event, myEvent, onDelete, onEdit }) => {
   const { title, description, location, city, date, time } = event;
 
   if (myEvent) {
@@ -35,7 +35,7 @@ const Card = ({ event, myEvent, onDelete }) => {
     <>
       <div className="w-60 rounded-lg">
         <div className={cardStyle()}>
-          <p>{title}</p>
+          <p className="text-center">{title}</p>
         </div>
         <div className="flex flex-col border-1 border-gray-200 rounded-b-lg pt-2 pb-4 px-2 gap-2">
           <p className=" text-gray-500">{description}</p>
@@ -59,7 +59,11 @@ const Card = ({ event, myEvent, onDelete }) => {
           </div>
           {myEvent ? (
             <div className="flex flex-col items-center justify-center mt-2 gap-2 ">
-              <button className="w-5/6 h-10 font-bold text-white bg-theme-blue rounded">
+              <button
+                event={JSON.stringify(event)}
+                onClick={onEdit}
+                className="w-5/6 h-10 font-bold text-white bg-theme-blue rounded"
+              >
                 Edit
               </button>
               <button

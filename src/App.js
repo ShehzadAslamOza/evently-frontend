@@ -11,6 +11,7 @@ import NotFound from "./pages/NotFound";
 import ResetPassword from "./pages/ResetPassword";
 import CreateEvent from "./pages/CreateEvent";
 import MyEvents from "./pages/MyEvents";
+import Edit from "./pages/Edit";
 
 // import Edit from "./pages/Edit"
 
@@ -30,6 +31,7 @@ function App() {
             <Route path="/resetPassword" element={<ResetPassword />} />
             <Route path="/createEvent" element={<CreateEvent />} />
             <Route path="/myEvents" element={<MyEvents />} />
+            <Route path="/edit" element={<Edit />} />
             <Route path="/*" element={<NotFound />} />
           </Routes>
         </div>

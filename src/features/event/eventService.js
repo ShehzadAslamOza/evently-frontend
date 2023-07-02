@@ -41,10 +41,28 @@ const deleteEvent = async (eventId, token) => {
   return response.data;
 };
 
+// Delete user event
+const updateEvent = async (eventData, token) => {
+  const config = {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  };
+  // console.log(eventId.id);
+  const response = await axios.put(
+    API_URL + "/" + eventData.id,
+    eventData,
+    config
+  );
+
+  return response.data;
+};
+
 const eventService = {
   createEvent,
   getEvents,
   deleteEvent,
+  updateEvent,
 };
 
 export default eventService;
