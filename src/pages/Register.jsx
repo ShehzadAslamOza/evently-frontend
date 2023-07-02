@@ -37,7 +37,7 @@ const Register = () => {
       if (user?.status === "Pending") {
         navigate("/verify");
       } else {
-        navigate("/");
+        navigate("/events");
       }
     }
 

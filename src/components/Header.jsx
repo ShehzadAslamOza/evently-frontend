@@ -21,7 +21,7 @@ const Header = () => {
     toast.success("Successfully Logged Out");
     dispatch(logout());
     dispatch(reset());
-    navigate("/");
+    navigate("/events");
   };
 
   const closeMenu = () => {
@@ -37,7 +37,7 @@ const Header = () => {
           {/* left side */}
 
           <div className="flex items-center gap-10">
-            <Link to="/">
+            <Link to="/events">
               <div onClick={closeMenu}>
                 <p className="text-2xl font-bold tracking-wide">Evently.</p>
               </div>
@@ -45,7 +45,7 @@ const Header = () => {
             {user ? (
               <div>
                 <ul className="hidden gap-3 text-lg md:flex">
-                  <Link to="/">
+                  <Link to="/events">
                     <li>Events</li>
                   </Link>
                   <Link to="/myEvents">

@@ -15,7 +15,7 @@ const Menu = ({ isOpen, closeMenu }) => {
   const onLogout = () => {
     dispatch(logout());
     dispatch(reset());
-    navigate("/");
+    navigate("/events");
   };
 
   return (

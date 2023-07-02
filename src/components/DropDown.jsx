@@ -10,7 +10,7 @@ const DropDown = ({ closeMenu, user }) => {
             onClick={closeMenu}
             className="block w-full text-xl py-3 px-4 border-b-2 border-gray-200"
           >
-            <Link to="/">Events</Link>
+            <Link to="/events">Events</Link>
           </div>
           <div className="block w-full text-xl py-3 px-4 border-b-2 border-gray-200">
             <Link to="/myEvents">My Events</Link>

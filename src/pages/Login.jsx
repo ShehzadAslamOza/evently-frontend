@@ -41,12 +41,12 @@ const Login = () => {
         }
       } else if (user.status === "Active") {
         toast.success("Successfully loggedin");
-        navigate("/");
+        navigate("/events");
       }
     }
 
     // if (isSuccess || user) {
-    //   navigate("/");
+    //   navigate("/events");
     // }
     localStorage.setItem("verified", JSON.stringify("false"));
     dispatch(reset());
