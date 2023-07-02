@@ -86,7 +86,7 @@ const Verify = () => {
         </h1>
         <p className="text-lg font-medium text-center">
           To continue using Evently, please verify your email address.{" "}
-          <span className="font-bold">Check Span</span>
+          <span className="font-semibold italic">Check Spam Folder</span>
         </p>
         <p className="italic">{user.email}</p>
         {buttonDisabled ? (
