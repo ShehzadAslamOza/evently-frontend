@@ -77,7 +77,7 @@ function CreateEvent() {
               onChange={onChange}
               id="title"
               name="title"
-              className="rounded bg-gray-100 ml-5"
+              className="rounded w-4/6 bg-gray-100 ml-5"
               type="text"
               value={title}
             />
@@ -88,7 +88,7 @@ function CreateEvent() {
               onChange={onChange}
               id="description"
               name="description"
-              className="rounded bg-gray-100 ml-5"
+              className="rounded w-4/6 bg-gray-100 ml-5"
               type="text"
               value={description}
             />
@@ -99,7 +99,7 @@ function CreateEvent() {
               onChange={onChange}
               id="location"
               name="location"
-              className="rounded bg-gray-100 ml-5"
+              className="rounded w-4/6 bg-gray-100 ml-5"
               type="text"
               value={location}
             />
@@ -110,7 +110,7 @@ function CreateEvent() {
             </label>
 
             <select
-              className="rounded bg-gray-100 ml-5"
+              className="rounded w-4/6 bg-gray-100 ml-5"
               name="city"
               id="city"
               onChange={onChange}
@@ -126,7 +126,7 @@ function CreateEvent() {
               Date
             </label>
             <input
-              className="rounded bg-gray-100 ml-5"
+              className="rounded w-4/6 bg-gray-100 ml-5"
               type="date"
               id="date"
               onChange={onChange}
@@ -138,7 +138,7 @@ function CreateEvent() {
               Time
             </label>
             <input
-              className="rounded bg-gray-100 ml-5"
+              className="rounded w-4/6 bg-gray-100 ml-5"
               type="time"
               id="time"
               onChange={onChange}

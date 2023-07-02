@@ -83,7 +83,7 @@ const ResetPassword = () => {
               onChange={onChange}
               id="currentPassword"
               name="currentPassword"
-              className="rounded bg-gray-100 ml-5"
+              className="rounded w-4/6 bg-gray-100 ml-5"
               type="password"
               value={currentPassword}
             />
@@ -94,7 +94,7 @@ const ResetPassword = () => {
               onChange={onChange}
               id="newPassword"
               name="newPassword"
-              className="rounded bg-gray-100 ml-5"
+              className="rounded w-4/6 bg-gray-100 ml-5"
               type="password"
               value={newPassword}
             />
@@ -105,7 +105,7 @@ const ResetPassword = () => {
               onChange={onChange}
               id="newPassword2"
               name="newPassword2"
-              className="rounded bg-gray-100 ml-5"
+              className="rounded w-4/6 bg-gray-100 ml-5"
               type="password"
               value={newPassword2}
             />

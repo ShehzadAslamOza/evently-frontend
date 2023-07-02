@@ -10,13 +10,13 @@ const Profile = () => {
     <Spinner />;
   }
   return (
-    <div className="flex flex-col mx-auto items-center justify-center max-w-xl h-screen pb-60">
+    <div className="container flex flex-col items-center justify-center max-w-xl h-screen pb-60">
       <div className="flex flex-col border-1 drop-shadow-lg rounded items-center gap-3 pb-14 pt-8 px-10 ">
         <h1 className="font-bold text-2xl">Profile</h1>
         <div className="flex items-center mt-2">
           <label className="w-24">First Name: </label>
           <input
-            className="rounded  bg-gray-100 ml-5"
+            className="rounded w-4/6 bg-gray-100 ml-5"
             type="text"
             value={user.firstName}
             disabled
@@ -25,7 +25,7 @@ const Profile = () => {
         <div className="flex items-center mt-2">
           <label className="w-24">Last Name: </label>
           <input
-            className="rounded  bg-gray-100 ml-5"
+            className="rounded w-4/6  bg-gray-100 ml-5"
             type="text"
             value={user.lastName}
             disabled
@@ -34,7 +34,7 @@ const Profile = () => {
         <div className="flex items-center mt-2">
           <label className="w-24">Email: </label>
           <input
-            className="rounded bg-gray-100 ml-5"
+            className="rounded w-4/6 bg-gray-100 ml-5"
             type="email"
             value={user.email}
             disabled
