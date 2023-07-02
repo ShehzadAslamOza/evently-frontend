@@ -37,7 +37,7 @@ const Header = () => {
           {/* left side */}
 
           <div className="flex items-center gap-10">
-            <Link to="/events">
+            <Link to="/">
               <div onClick={closeMenu}>
                 <p className="text-2xl font-bold tracking-wide">Evently.</p>
               </div>
