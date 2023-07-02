@@ -98,7 +98,14 @@ const MyEvents = () => {
                 />
               );
             } else if (currentCity === event.city) {
-              return <Card event={event} />;
+              return (
+                <Card
+                  event={event}
+                  myEvent={true}
+                  onDelete={onDelete}
+                  onEdit={onEdit}
+                />
+              );
             }
           }
         })}
