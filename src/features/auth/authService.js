@@ -1,6 +1,7 @@
 import axios from "axios";
 
 const API_URL = "https://evently-backend.vercel.app/auth";
+// const API_URL = "http://localhost:3001/auth";
 
 // Register user
 const register = async (userData) => {

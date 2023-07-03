@@ -1,6 +1,7 @@
 import axios from "axios";
 
 const API_URL = "https://evently-backend.vercel.app/event";
+// const API_URL = "http://localhost:3001/auth";
 
 // Create new event
 const createEvent = async (eventData, token) => {

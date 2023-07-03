@@ -5,7 +5,7 @@ const Spinner = () => {
   return (
     <>
       <div className="absolute w-screen h-screen z-10 bg-black opacity-30"></div>
-      <div className="absolute top-1/2 left-1/2">
+      <div className="absolute top-1/2 left-1/2 z-20">
         <Oval
           height={80}
           width={80}
